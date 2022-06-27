@@ -137,7 +137,7 @@ $ docker push $registry/mvc-app:1.0
 		  --resource-group aks-k8s-rg \  
 		  --name aks-k8s \  
 		  --subscription "Microsoft Azure Sponsorship" 
-	 Merged "aks-k8s" as current context in /Users/houssem/.kube/config  
+	   
 8.4) $ kubectl create clusterrolebinding kubernetes-dashboard \  
                --clusterrole=cluster-admin \  
                --serviceaccount=kube-system:kubernetes-dashboard  
@@ -149,13 +149,7 @@ $ docker push $registry/mvc-app:1.0
 
 ### 9) Create the CI/CD pipelines for using Azure DevOps   
 
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/ci-cd-aks.png?raw=true"/>
 
-	9.1) CI pipeline: builds the container and pushes it to docker hub.  
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/kubernetes-ci.png?raw=true"/>
-
-	9.2) CD pipeline: deploys the YAML manifest files into Kubernetes cluster.  
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/kubernetes-cd.png?raw=true"/>
 	
 ### 10) Discussion points  
 scalability, health check, mounting volume, resource limits, service discovery, deploy with Helm...  
@@ -164,9 +158,8 @@ scalability, health check, mounting volume, resource limits, service discovery, 
 
 eShopOnContainers: https://github.com/dotnet-architecture/eShopOnContainers
 
-https://www.udemy.com/kubernetes-for-developers/
-Please email me if you want a free coupon :)  
+
 
 <a href="https://www.udemy.com/kubernetes-for-developers/">
-<img src="https://github.com/HoussemDellai/ProductsStoreOnKubernetes/blob/master/images/udemy-courses.png?raw=true" width="90%"/>
+<img src=">
 </a>
